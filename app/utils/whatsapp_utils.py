@@ -13,7 +13,7 @@ def log_http_response(response):
     logging.info(f"Body: {response.text}")
 
 
-def get_text_message_input(recipient, text):
+def get_text_message_input_text(recipient, text):
     return json.dumps(
         {
             "messaging_product": "whatsapp",
@@ -23,6 +23,45 @@ def get_text_message_input(recipient, text):
             "text": {"preview_url": False, "body": text},
         }
     )
+
+def get_text_message_input(recipient):
+    """Generate a WhatsApp interactive button menu"""
+    return json.dumps({
+        "messaging_product": "whatsapp",
+        "recipient_type": "individual",
+        "to": recipient,
+        "type": "interactive",
+        "interactive": {
+            "type": "button",
+            "body": {"text": "Welcome! How can I assist you?"},
+            "action": {
+                "buttons": [
+                    {"type": "reply", "reply": {"id": "prices", "title": "💰 List of Prices"}},
+                    {"type": "reply", "reply": {"id": "hours", "title": "🕒 Opening Hours"}},
+                    {"type": "reply", "reply": {"id": "human", "title": "👨‍💼 Talk with a Human"}}
+                ]
+            }
+        }
+    })
+
+def get_text_message_input_menu(recipient, text=""):
+    return json.dumps({
+        "messaging_product": "whatsapp",
+        "recipient_type": "individual",
+        "to": recipient,
+        "type": "interactive",
+        "interactive": {
+            "type": "button",
+            "body": {"text": "Welcome! How can I assist you?"},
+            "action": {
+                "buttons": [
+                    {"type": "reply", "reply": {"id": "prices", "title": "💰 List of Prices"}},
+                    {"type": "reply", "reply": {"id": "hours", "title": "🕒 Opening Hours"}},
+                    {"type": "reply", "reply": {"id": "human", "title": "👨‍💼 Talk with a Human"}}
+                ]
+            }
+        }
+    })
 
 
 def generate_response(response):
@@ -95,8 +134,35 @@ def process_whatsapp_message(body):
     # response = generate_response(message_body, wa_id, name)
     # response = process_text_for_whatsapp(response)
 
-    data = get_text_message_input(current_app.config["RECIPIENT_WAID"], response)
+    data = get_text_message_input_menu(current_app.config["RECIPIENT_WAID"], response)
     send_message(data)
+
+    # print(body)
+#
+    #wa_id = body["entry"][0]["changes"][0]["value"]["contacts"][0]["wa_id"]
+#
+    ## Check if the message is an interactive button response
+    #if "button" in body["entry"][0]["changes"][0]["value"]["messages"][0]:
+    #    button_id = body["entry"][0]["changes"][0]["value"]["messages"][0]["button"]["payload"]
+#
+    #    if button_id == "prices":
+    #        response = "Here is our price list:\n- Coffee: $3\n- Tea: $2\n- Sandwich: $5"
+    #    elif button_id == "hours":
+    #        response = "Our opening hours are:\n🕒 Mon-Fri: 8 AM - 8 PM\n🕒 Sat-Sun: 9 AM - 6 PM"
+    #    elif button_id == "human":
+    #        response = "Please wait while we connect you to a human agent..."
+    #    else:
+    #        response = "Sorry, I didn't understand that."
+#
+    #else:
+    #    # If it's a normal text message, send the menu
+    #    response = "Welcome! How can I assist you?\nPlease select an option from the menu."
+#
+    #if "button" not in body["entry"][0]["changes"][0]["value"]["messages"][0]:
+    #    data = get_text_message_input(wa_id) 
+    #else:
+    #    data = get_text_message_input(wa_id, response)
+    #send_message(data)
 
 
 def is_valid_whatsapp_message(body):
