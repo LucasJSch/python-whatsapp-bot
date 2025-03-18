@@ -1,5 +1,4 @@
 import json
-from dotenv import load_dotenv
 import os
 import requests
 import aiohttp
@@ -9,14 +8,10 @@ import asyncio
 # Load environment variables
 # --------------------------------------------------------------
 
-load_dotenv()
-ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
-RECIPIENT_WAID = os.getenv("RECIPIENT_WAID")
-PHONE_NUMBER_ID = os.getenv("PHONE_NUMBER_ID")
-VERSION = os.getenv("VERSION")
-
-APP_ID = os.getenv("APP_ID")
-APP_SECRET = os.getenv("APP_SECRET")
+ACCESS_TOKEN = "EAAQawGS7qxYBO6SZCOXdDVKwJ5VelBcFZB1UWcMJ1Q4hbfYMySBiZA2lIcoFCUMYQwU6AyBQgzSluOulwT3ZBtkfccHPtHRZBUiaGEJ7qwsG937fgecWEUuTt33WzgI3T7p2FhWwg2wmEHTywTnbx5ZCeZCaACYkheNBDcRiQ50xo3bPiTyoeWX0cBRLKlSi0hIzkggTHHKBezDz8jeNrnxIksa"
+RECIPIENT_WAID = "+541166734594"
+PHONE_NUMBER_ID = "589785260887815"
+VERSION = "v22.0"
 
 # --------------------------------------------------------------
 # Send a template WhatsApp message
@@ -33,6 +28,7 @@ def send_whatsapp_message():
         "messaging_product": "whatsapp",
         "to": RECIPIENT_WAID,
         "type": "template",
+        #"body": "123"
         "template": {"name": "hello_world", "language": {"code": "en_US"}},
     }
     response = requests.post(url, headers=headers, json=data)

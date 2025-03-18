@@ -39,9 +39,15 @@ def send_message(data):
     url = f"https://graph.facebook.com/{current_app.config['VERSION']}/{current_app.config['PHONE_NUMBER_ID']}/messages"
 
     try:
+        #print("request")
+        #print(url)
+        #print(data)
+        #print(headers)
+        #print("response")
+        #print(response)  # 10 seconds timeout as an example
         response = requests.post(
             url, data=data, headers=headers, timeout=10
-        )  # 10 seconds timeout as an example
+        )
         response.raise_for_status()  # Raises an HTTPError if the HTTP request returned an unsuccessful status code
     except requests.Timeout:
         logging.error("Timeout occurred while sending message")
