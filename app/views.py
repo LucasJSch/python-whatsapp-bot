@@ -4,9 +4,9 @@ import json
 from flask import Blueprint, request, jsonify, current_app
 
 from .decorators.security import signature_required
-from .utils.whatsapp_utils import (
-    process_whatsapp_message,
-    is_valid_whatsapp_message,
+from .whatsapp.whatsapp_parser import WhatsAppWebhookPayload
+from .whatsapp.whatsapp_utils import (
+    process_whatsapp_message
 )
 
 webhook_blueprint = Blueprint("webhook", __name__)
@@ -27,31 +27,19 @@ def handle_message():
         response: A tuple containing a JSON response and an HTTP status code.
     """
     body = request.get_json()
-    # logging.info(f"request body: {body}")
-
-    # Check if it's a WhatsApp status update
-    if (
-        body.get("entry", [{}])[0]
-        .get("changes", [{}])[0]
-        .get("value", {})
-        .get("statuses")
-    ):
-        logging.info("Received a WhatsApp status update.")
-        return jsonify({"status": "ok"}), 200
-
     try:
-        if is_valid_whatsapp_message(body):
-            process_whatsapp_message(body)
-            return jsonify({"status": "ok"}), 200
-        else:
-            # if the request is not a WhatsApp API event, return an error
-            return (
-                jsonify({"status": "error", "message": "Not a WhatsApp API event"}),
-                404,
-            )
+        payload = WhatsAppWebhookPayload(body)
     except json.JSONDecodeError:
         logging.error("Failed to decode JSON")
         return jsonify({"status": "error", "message": "Invalid JSON provided"}), 400
+    
+    # Check if it's a WhatsApp status update
+    if payload.statuses:
+        logging.info("Received a WhatsApp status update.")
+        return jsonify({"status": "ok"}), 200
+
+    process_whatsapp_message(body)
+    return jsonify({"status": "ok"}), 200
 
 
 # Required webhook verifictaion for WhatsApp
@@ -65,15 +53,12 @@ def verify():
         # Check the mode and token sent are correct
         if mode == "subscribe" and token == current_app.config["VERIFY_TOKEN"]:
             # Respond with 200 OK and challenge token from the request
-            logging.info("WEBHOOK_VERIFIED")
             return challenge, 200
         else:
             # Responds with '403 Forbidden' if verify tokens do not match
-            logging.info("VERIFICATION_FAILED")
             return jsonify({"status": "error", "message": "Verification failed"}), 403
     else:
         # Responds with '400 Bad Request' if verify tokens do not match
-        logging.info("MISSING_PARAMETER")
         return jsonify({"status": "error", "message": "Missing parameters"}), 400
 
 

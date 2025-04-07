@@ -1,0 +1,239 @@
+- Get flow of options menu working
+- Deploy app to AWS/GCP
+
+
+
+Ver precios y servicios que ofrecen:
+- https://pricing.cliengo.com/
+- https://www.callbell.eu/es/precios/
+- https://aokitech.com.ar/
+
+
+
+Utilities:
+There are various types of WhatsApp automated messages and utilities that businesses and individuals use to enhance communication, streamline processes, and improve engagement. These can be categorized into several types based on their functionality and purpose:
+
+1. Customer Support Automation
+Instant Replies (Auto Responses): Automatically reply to customer inquiries with predefined messages. Commonly used for frequently asked questions (FAQs).
+
+Example: "Thank you for reaching out! We are currently reviewing your message and will respond shortly."
+
+Welcome Messages: Automatically send a greeting message when a new customer starts a conversation.
+
+Example: "Welcome to [Business Name]! How can we assist you today?"
+
+Ticketing System Integration: Automating customer service by assigning tickets and providing updates on customer inquiries or issues.
+
+Example: "Your issue has been assigned ticket #12345. Our team is working on it."
+
+2. Order and Delivery Notifications
+Order Confirmation: Automatically send an order confirmation message after a customer places an order.
+
+Example: "Your order #123 has been confirmed! We will notify you when it’s shipped."
+
+Shipping and Delivery Updates: Keep customers informed about their order status in real-time (shipped, out for delivery, delivered).
+
+Example: "Your order #123 is out for delivery and should arrive within the next 2 hours."
+
+Payment Confirmation: Inform customers about successful payment transactions or pending payments.
+
+Example: "Thank you for your payment of $50. Your order will be processed shortly."
+
+3. Appointment Scheduling and Reminders
+Appointment Booking: Automatically confirm appointment bookings or reservations made via WhatsApp.
+
+Example: "Your appointment for a consultation with Dr. Smith is confirmed for March 27 at 3:00 PM."
+
+Reminders: Send automated reminders to customers or clients about upcoming appointments or events.
+
+Example: "This is a reminder for your appointment with Dr. Smith tomorrow at 3:00 PM."
+
+Cancellation/Rescheduling: Notify customers when appointments are canceled or rescheduled.
+
+Example: "Your appointment with Dr. Smith has been rescheduled to March 28 at 4:00 PM."
+
+4. Marketing and Promotions
+Broadcast Messages: Send promotional or marketing messages to a group of customers or contacts (broadcast lists).
+
+Example: "Get 20% off on all products this weekend! Use code WEEKEND20 at checkout."
+
+Product Recommendations: Automate personalized product suggestions based on customer preferences or purchase history.
+
+Example: "We noticed you liked our sportswear. Check out our new collection of gym apparel!"
+
+Event Notifications: Notify customers about events such as webinars, sales, or product launches.
+
+Example: "Join us for a special webinar on 'How to Improve Your Fitness Routine' on April 1st."
+
+5. Surveys and Feedback
+Feedback Requests: After a purchase or interaction, automatically request feedback or a review from customers.
+
+Example: "We’d love to hear about your experience with our service. Please share your feedback."
+
+Surveys and Polls: Send automated surveys or polls to engage customers and gather insights.
+
+Example: "What is your preferred payment method? Reply 1 for Credit Card, 2 for PayPal."
+
+6. Lead Generation and Qualification
+Lead Capture: Use automated messages to capture customer details (name, email, phone number) through conversation.
+
+Example: "Hi! Can I get your name and email address so I can provide more information about our services?"
+
+Lead Qualification: Based on the responses, automatically classify leads (e.g., hot, warm, cold) or gather more information to qualify them.
+
+Example: "Are you looking for a basic package or an advanced plan? Reply with 1 for Basic, 2 for Advanced."
+
+7. Payments and Invoices
+Payment Links: Automatically send payment links to customersThere are various types of WhatsApp automated messages and utilities that businesses and individuals use to enhance communication, streamline processes, and improve engagement. These can be categorized into several types based on their functionality and purpose:
+
+1. Customer Support Automation
+Instant Replies (Auto Responses): Automatically reply to customer inquiries with predefined messages. Commonly used for frequently asked questions (FAQs).
+
+Example: "Thank you for reaching out! We are currently reviewing your message and will respond shortly."
+
+Welcome Messages: Automatically send a greeting message when a new customer starts a conversation.
+
+Example: "Welcome to [Business Name]! How can we assist you today?"
+
+Ticketing System Integration: Automating customer service by assigning tickets and providing updates on customer inquiries or issues.
+
+Example: "Your issue has been assigned ticket #12345. Our team is working on it."
+
+2. Order and Delivery Notifications
+Order Confirmation: Automatically send an order confirmation message after a customer places an order.
+
+Example: "Your order #123 has been confirmed! We will notify you when it’s shipped."
+
+Shipping and Delivery Updates: Keep customers informed about their order status in real-time (shipped, out for delivery, delivered).
+
+Example: "Your order #123 is out for delivery and should arrive within the next 2 hours."
+
+Payment Confirmation: Inform customers about successful payment transactions or pending payments.
+
+Example: "Thank you for your payment of $50. Your order will be processed shortly."
+
+3. Appointment Scheduling and Reminders
+Appointment Booking: Automatically confirm appointment bookings or reservations made via WhatsApp.
+
+Example: "Your appointment for a consultation with Dr. Smith is confirmed for March 27 at 3:00 PM."
+
+Reminders: Send automated reminders to customers or clients about upcoming appointments or events.
+
+Example: "This is a reminder for your appointment with Dr. Smith tomorrow at 3:00 PM."
+
+Cancellation/Rescheduling: Notify customers when appointments are canceled or rescheduled.
+
+Example: "Your appointment with Dr. Smith has been rescheduled to March 28 at 4:00 PM."
+
+4. Marketing and Promotions
+Broadcast Messages: Send promotional or marketing messages to a group of customers or contacts (broadcast lists).
+
+Example: "Get 20% off on all products this weekend! Use code WEEKEND20 at checkout."
+
+Product Recommendations: Automate personalized product suggestions based on customer preferences or purchase history.
+
+Example: "We noticed you liked our sportswear. Check out our new collection of gym apparel!"
+
+Event Notifications: Notify customers about events such as webinars, sales, or product launches.
+
+Example: "Join us for a special webinar on 'How to Improve Your Fitness Routine' on April 1st."
+
+5. Surveys and Feedback
+Feedback Requests: After a purchase or interaction, automatically request feedback or a review from customers.
+
+Example: "We’d love to hear about your experience with our service. Please share your feedback."
+
+Surveys and Polls: Send automated surveys or polls to engage customers and gather insights.
+
+Example: "What is your preferred payment method? Reply 1 for Credit Card, 2 for PayPal."
+
+6. Lead Generation and Qualification
+Lead Capture: Use automated messages to capture customer details (name, email, phone number) through conversation.
+
+Example: "Hi! Can I get your name and email address so I can provide more information about our services?"
+
+Lead Qualification: Based on the responses, automatically classify leads (e.g., hot, warm, cold) or gather more information to qualify them.
+
+Example: "Are you looking for a basic package or an advanced plan? Reply with 1 for Basic, 2 for Advanced."
+
+7. Payments and Invoices
+Payment Links: Automatically send payment links to customers after a purchase or service.
+
+Example: "Click here to complete your payment for order #123: [payment_link]."
+
+Invoice Generation: Automatically send invoices or receipts after a transaction is completed.
+
+Example: "Thank you for your purchase! Your invoice #12345 is attached."
+
+8. Event-Based Triggers
+Time-Based Messages: Set automated messages that are sent based on specific dates or times.
+
+Example: "Good morning! Here's your daily weather update for today."
+
+Geo-Location Triggered Messages: Send automated messages based on a customer’s location using geo-fencing (e.g., when they are near a store).
+
+Example: "You're near our store! Enjoy a 10% discount when you visit today."
+
+9. Interactive Chatbots
+FAQ Chatbots: Automate responses to frequently asked questions (e.g., store hours, policies, product details).
+
+Example: "How can I help you? Type '1' for Store Hours, '2' for Return Policy."
+
+Product Assistance: Assist customers with finding the right product through an automated conversation flow.
+
+Example: "What type of product are you looking for? Type '1' for Shoes, '2' for T-shirts."
+
+10. Appointment Booking and Ticketing Systems
+Automated Ticket Generation: Automatically generate and send tickets for support issues or events.
+
+Example: "Your ticket #987 has been generated. Our support team will contact you shortly."
+
+Time Slot Selection: Allow customers to choose available time slots for appointments directly in WhatsApp.
+
+Example: "Please select a time slot for your appointment: 1) 10:00 AM, 2) 2:00 PM, 3) 4:00 PM."
+
+11. WhatsApp Business API Utilities
+Integration with CRMs: Integrate WhatsApp with CRM tools to send personalized messages, track customer interactions, and manage contacts.
+
+Automated Reports: Send daily or weekly automated reports summarizing business activity, customer queries, sales, etc.
+
+Example: "Here’s your weekly sales report: Total Sales: $5000, New Customers: 120."
+Example: "Click here to complete your payment for order #123: [payment_link]."
+
+Invoice Generation: Automatically send invoices or receipts after a transaction is completed.
+
+Example: "Thank you for your purchase! Your invoice #12345 is attached."
+
+8. Event-Based Triggers
+Time-Based Messages: Set automated messages that are sent based on specific dates or times.
+
+Example: "Good morning! Here's your daily weather update for today."
+
+Geo-Location Triggered Messages: Send automated messages based on a customer’s location using geo-fencing (e.g., when they are near a store).
+
+Example: "You're near our store! Enjoy a 10% discount when you visit today."
+
+9. Interactive Chatbots
+FAQ Chatbots: Automate responses to frequently asked questions (e.g., store hours, policies, product details).
+
+Example: "How can I help you? Type '1' for Store Hours, '2' for Return Policy."
+
+Product Assistance: Assist customers with finding the right product through an automated conversation flow.
+
+Example: "What type of product are you looking for? Type '1' for Shoes, '2' for T-shirts."
+
+10. Appointment Booking and Ticketing Systems
+Automated Ticket Generation: Automatically generate and send tickets for support issues or events.
+
+Example: "Your ticket #987 has been generated. Our support team will contact you shortly."
+
+Time Slot Selection: Allow customers to choose available time slots for appointments directly in WhatsApp.
+
+Example: "Please select a time slot for your appointment: 1) 10:00 AM, 2) 2:00 PM, 3) 4:00 PM."
+
+11. WhatsApp Business API Utilities
+Integration with CRMs: Integrate WhatsApp with CRM tools to send personalized messages, track customer interactions, and manage contacts.
+
+Automated Reports: Send daily or weekly automated reports summarizing business activity, customer queries, sales, etc.
+
+Example: "Here’s your weekly sales report: Total Sales: $5000, New Customers: 120."

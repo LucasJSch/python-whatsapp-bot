@@ -1,5 +1,1 @@
 flask
-python-dotenv
-openai
-aiohttp
-requests

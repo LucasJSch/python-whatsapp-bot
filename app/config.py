@@ -5,8 +5,7 @@ import logging
 
 
 def load_configurations(app):
-    #load_dotenv()
-    app.config["ACCESS_TOKEN"] = "EAAQawGS7qxYBO8KD0U1E5qvFLZC94aqNEmV6AXjfPnajIB5uxNCpjzgxmUZCqZCcs3qvBes4gp3vJ7Be0jC6nhOfLkHsoxj2idHvLPlK3DyihijjX7Uy1UtFvxm6dRtYCKRrnadYEQSeWZBSAXXZCixaIB77JqsNYejg1fMicZAk4qUJTa2K0lz17KZAGicFKWWB20BWwx5R1PnXJesPCy5Pmm9"
+    app.config["ACCESS_TOKEN"] = "EAAQawGS7qxYBOznlZASdlHI5BHaCaV6ZAgj2IjAPxZB9TUtK8WAC1l5aBUgKVk9u3ESJUc5kgZAVvGy8rY0UX9C8g8OwJlcn28kOkflvXYAbaphmw0XORQN9dIZA349TXr6c0TyUMTQE1gVKVkyfFDuLfwF7OSd9dIzii6adnbZCRcxKRY756P9i1ZBHZCZBVbt6zbSHXX6yJpjFR4aarssVCSpJI"
     app.config["YOUR_PHONE_NUMBER"] = "589785260887815"
     app.config["APP_ID"] = "1155313532906262"
     app.config["APP_SECRET"] = "997363276fe1222198d4e16c3a7d8206"
